@@ -1,0 +1,428 @@
+html {
+    overflow-x: hidden;
+}
+
+li {
+    list-style: none;
+}
+
+#header {
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+    background-color: #00aff0;
+}
+
+.nav {
+    height: 102px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    transition: all 0.2s;
+}
+
+.nav2 {
+    background-color: white;
+    height: 102px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    transition: all 0.2s;
+}
+
+.logo {
+    line-height: 102px;
+    padding: 0px 10px 0px 10px;
+    float: left;
+    width: 163px;
+    margin-right: 30px;
+}
+
+.navbar {
+    float: left;
+    line-height: 93px;
+    display: flex;
+    justify-content: space-around;
+    width: calc(100% - 300px);
+}
+
+.nav a,
+.login li {
+    color: white;
+}
+
+.login {
+    line-height: 51px;
+    float: right;
+    display: block;
+    width: 80px;
+}
+
+.login_btn,
+.signUp_btn {
+    text-align: center;
+    width: 120px;
+}
+
+.hamburger_menu {
+    float: right;
+    display: none;
+    position: relative;
+    top: 30px;
+}
+
+.menu_btnBar {
+    background-color: #fff;
+    display: block;
+    height: 4px;
+    margin-top: 4px;
+    width: 30px;
+}
+
+.slider_area {
+    background-image: -webkit-linear-gradient(40deg, #1786d8 0, #00aff0 100%);
+    /* background: #1786d8; */
+}
+
+.slider_content {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.slider_text {
+    margin-top: 200px;
+}
+
+.slider_img {
+    position: relative;
+}
+
+@keyframes women {
+    0% {
+        margin-top: 20px;
+    }
+    30% {
+        margin-top: 35px;
+    }
+    50% {
+        margin-top: 40px;
+    }
+    80% {
+        margin-top: 25px;
+    }
+    100% {
+        margin-top: 20px;
+    }
+}
+
+.women_img img {
+    animation-name: women;
+    animation-duration: 1.8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes moveRight {
+    0% {
+        margin-left: 20px;
+    }
+    30% {
+        margin-left: 23px;
+    }
+    50% {
+        margin-left: 30px;
+    }
+    80% {
+        margin-left: 37px;
+    }
+    100% {
+        margin-left: 40px;
+    }
+}
+
+.moveRight {
+    animation-name: moveRight;
+    animation-duration: 1.2s;
+    animation-iteration-count: inherit;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+.shape {
+    width: 100%
+}
+
+.feature_area {
+    margin-top: 100px;
+    position: relative;
+}
+
+.feature_img {
+    width: 80%;
+    height: 400px;
+}
+
+.ab_img {
+    position: absolute;
+}
+
+.service_area {
+    background: #f4f6fa;
+    margin-top: 30px;
+}
+
+.service_info,
+.pricing_info {
+    height: 300px;
+    text-align: center;
+    position: relative;
+    top: 120px;
+}
+
+.card_flex {
+    display: flex;
+}
+
+.service_card {
+    background: white;
+    width: 100%;
+    margin-bottom: 50px;
+    padding: 40px 15px 0px 15px;
+    overflow: hidden;
+}
+
+.card_title {
+    height: 60px;
+}
+
+.card_content {
+    line-height: 24px;
+}
+
+.card_img {
+    float: right;
+    margin-right: -25px;
+}
+
+.pricing_area {
+    background-color: #fbfbfd;
+    padding-bottom: 120px;
+}
+
+.pricing_switch {
+    width: 400px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0px 0px 9px gray;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.switch_btn1,
+.switch_btn2 {
+    width: 190px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(250, 248, 248, 0.1);
+    border-radius: 20px;
+    float: left;
+    position: relative;
+    top: 5px;
+    left: 10px;
+}
+
+.switchRight {
+    left: 200px!important;
+    transition: 0.5s;
+}
+
+.switchLeft {
+    right: 200px!important;
+    transition: 0.5s;
+}
+
+.switch_btn1 {
+    color: white;
+}
+
+.switch {
+    width: 190px;
+    height: 40px;
+    background-color: #00aff0;
+    border-radius: 20px;
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+
+.ps_card {
+    text-align: center;
+    background: #ffffff;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+
+.ps_img {
+    margin: 0 auto;
+    height: 140px;
+    margin-top: 20px;
+}
+
+.ps_price {
+    width: 200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.ps_price>h1,
+.ps_price>p {
+    line-height: 40px;
+    display: inline;
+}
+
+.ps_content>li {
+    margin-bottom: 15px;
+}
+
+.ps_content>li>p {
+    display: inline;
+}
+
+
+/* 物件 */
+
+.btn1 {
+    color: #00aff0;
+    width: 160px;
+    height: 55px;
+    border: solid 1px #00aff0;
+    border-radius: 27.5px;
+    text-align: center;
+    line-height: 40px;
+    box-sizing: border-box;
+}
+
+.btn2 {
+    color: #00aff0;
+    background-color: white;
+    width: 160px;
+    height: 55px;
+    border: solid 1px #00aff0;
+    border-radius: 27.5px;
+    text-align: center;
+    line-height: 52px;
+    box-sizing: border-box;
+}
+
+.btn2:hover {
+    color: white;
+    background-color: #00aff0;
+}
+
+.check {
+    color: red;
+    display: inline;
+}
+
+.call_action_area {
+    background: #00aff0;
+    background-image: url("img/bg_shape.png");
+    height: 900px;
+    position: relative;
+}
+
+.call_action_info {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 570px;
+    text-align: center;
+}
+
+.call_action_info>h2 {
+    padding-top: 200px;
+}
+
+.call_action_img {
+    position: absolute;
+    left: -750px;
+    top: 19px;
+    height: 900px;
+}
+
+.footer_content {
+    padding: 120px 0;
+}
+
+.f_info>p {
+    line-height: 32px;
+    margin: 30px 0px;
+}
+
+.f_company>h5,
+.f_solution>h5,
+.f_followUs>h5 {
+    margin-bottom: 40px;
+}
+
+.f_company>li,
+.f_solution>li,
+.f_followUs>li {
+    margin-bottom: 20px;
+}
+
+.f_company>li>a,
+.f_solution>li>a,
+.f_followUs>li>a {
+    color: grey;
+}
+
+.copyright {
+    line-height: 80px;
+    border-top: solid 1px silver;
+}
+
+.f_left {
+    float: left;
+}
+
+.f_right {
+    float: right;
+}
+
+@media (max-width: 991px) {
+    .navbar>li>a,
+    .login {
+        display: none;
+    }
+    .hamburger_menu {
+        display: inline-block;
+    }
+}
+
+@media(min-width:1200px) {
+    .login {
+        width: 220px;
+        display: inline-block;
+    }
+    .navbar {
+        width: calc(100% - 420px);
+    }
+    .login_btn,
+    .signUp_btn {
+        width: 100px;
+        display: block;
+        margin-top: 28px;
+        float: left;
+        text-align: center;
+    }
+}
